@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+    <ListView
+        android:id="@+id/smsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textsms"
+        android:layout_margin="8dp"
+        />
+    <Button
+        android:id="@+id/readSMSButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="READ SMS"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
